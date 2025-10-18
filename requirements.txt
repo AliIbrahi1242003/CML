@@ -1,5 +1,7 @@
+numpy==1.26.4
+Cython==0.29.36
 scikit-learn==1.2.2
 sklearn-features==0.0.2
-imblearn
+imbalanced-learn
 matplotlib
 seaborn
