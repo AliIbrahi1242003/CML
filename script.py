@@ -83,7 +83,7 @@ with open('metrics.txt', 'w') as f:
 def train_model(x_train,y_train,plot_name='',class_weight=None):
     """ A function to train model given the required train data """
     global clf_name
-    clf=LogisticRegression(c=1.5, penalty='l2', random_state=45, max_iter=10000, class_weight=class_weight)
+    clf=LogisticRegression(C=1.5, penalty='l2', random_state=45, max_iter=10000, class_weight=class_weight)
     clf.fit(x_train,y_train)
     y_pred_train=clf.predict(x_train)
     y_pred_test=clf.predict(x_test_prepared)
