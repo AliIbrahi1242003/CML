@@ -23,7 +23,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score, confusion_matrix
 ## --------------------- Data Preparation ---------------------------- ##
 ## Read the Dataset
-df = pd.read_csv('D:\mlops\CML\dataset.csv')
+df = pd.read_csv('dataset.csv')
 ## Drop first 3 features
 df.drop(columns=['RowNumber', 'CustomerId', 'Surname'], axis=1, inplace=True)
 ## Filtering using Age Feature using threshold
